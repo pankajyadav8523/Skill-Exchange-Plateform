@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  /* About Section Styles */
+  #about {
+    background-color: #ffffff;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1D4ED8; /* Blue color */
+  }
+  
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1D4ED8;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: #4B5563; /* Gray color */
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .max-w-2xl {
+    max-width: 40rem;
+  }
+  
+  /* Flexbox for the creator sections */
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .space-x-10 {
+    gap: 2.5rem;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .w-32 {
+    width: 8rem;
+  }
+  
+  .h-32 {
+    height: 8rem;
+  }
+  
+  .rounded-full {
+    border-radius: 50%;
+  }
+  
+  .border-4 {
+    border-width: 4px;
+  }
+  
+  .border-blue-600 {
+    border-color: #2563EB;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .mt-8 {
+    margin-top: 2rem;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .text-gray-600 {
+    color: #4B5563;
+  }
+  
+  .max-w-xs {
+    max-width: 20rem;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
