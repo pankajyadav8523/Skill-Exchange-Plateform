@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "profilePic": "https://via.placeholder.com/100",
+      "skills": ["JavaScript", "React", "Node.js"],
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "profilePic": "https://via.placeholder.com/100",
+      "skills": ["Python", "Data Analysis", "Machine Learning"],
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "profilePic": "https://via.placeholder.com/100",
+      "skills": ["Graphic Design", "UI/UX", "Illustrator"],
+      "rating": 4.3
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "profilePic": "https://via.placeholder.com/100",
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "rating": 4.1
+    },
+    {
+      "id": 5,
+      "name": "Charlie Davis",
+      "profilePic": "https://via.placeholder.com/100",
+      "skills": ["React", "Node.js", "MongoDB"],
+      "rating": 4.7
+    },
+    {
+      "id": 6,
+      "name": "Eve White",
+      "profilePic": "https://via.placeholder.com/100",
+      "skills": ["Python", "Django", "PostgreSQL"],
+      "rating": 4.6
+    },
+    {
+      "id": 7,
+      "name": "Grace Harris",
+      "profilePic": "https://via.placeholder.com/100",
+      "skills": ["Photoshop", "Illustrator", "Figma"],
+      "rating": 4.4
+    },
+    {
+      "id": 8,
+      "name": "David Lee",
+      "profilePic": "https://via.placeholder.com/100",
+      "skills": ["Ruby on Rails", "SQL", "JavaScript"],
+      "rating": 4.2
+    }
+  ]
+  
