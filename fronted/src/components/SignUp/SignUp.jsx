@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom"; // Import navigation hook
-import { useAuth } from "../../../AuthContext"; // Import the AuthContext
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../../AuthContext";
 import "./SignUp.css";
 
 const Signup = () => {
-  const { signup } = useAuth(); // Get the signup function from the context
-  const [email, setEmail] = useState(""); // State for email
-  const [password, setPassword] = useState(""); // State for password
-  const [error, setError] = useState(""); // State for error messages
-  const navigate = useNavigate(); // Hook for navigation
+  const { signup } = useAuth();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
-  // Signup handler function
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await signup(email, password); // Call signup function from context
-      navigate("/login"); // Redirect to login page after successful signup
+      await signup(email, password);
+      navigate("/login");
     } catch (err) {
       setError("Failed to create an account. Please try again.");
     }
@@ -27,7 +26,6 @@ const Signup = () => {
       <Container className="signup-container" style={{ height: "300px" }}>
         <h2 className="signup-title">Signup</h2>
         {error && <p className="text-danger">{error}</p>}{" "}
-        {/* Display error message if any */}
         <Form onSubmit={handleSignup}>
           <Form.Group controlId="formEmail" className="mb-3">
             <Form.Label>Email</Form.Label>
@@ -35,7 +33,7 @@ const Signup = () => {
               type="email"
               placeholder="Enter email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)} // Update email state on change
+              onChange={(e) => setEmail(e.target.value)}
             />
           </Form.Group>
           <Form.Group controlId="formPassword" className="mb-3">
@@ -44,7 +42,7 @@ const Signup = () => {
               type="password"
               placeholder="Enter password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)} // Update password state on change
+              onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
           <Button variant="primary" type="submit" className="signup-button">

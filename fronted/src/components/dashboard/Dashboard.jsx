@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Dashboard.css";
 
-// Importing profiles data from the skills.json file in the same folder
 import profilesData from "./skills.json";
 
 const Dashboard = () => {
   const [profiles, setProfiles] = useState([]);
 
   useEffect(() => {
-    // Setting the profiles data from the imported JSON file
     setProfiles(profilesData);
   }, []);
 

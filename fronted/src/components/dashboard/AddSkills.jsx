@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
 
 const AddSkills = ({ setProfiles, navigate }) => {
-  const [name, setName] = useState('');
-  const [skills, setSkills] = useState('');
+  const [name, setName] = useState("");
+  const [skills, setSkills] = useState("");
   const [rating, setRating] = useState(5); // Default rating
-  const [profilePic, setProfilePic] = useState('');
+  const [profilePic, setProfilePic] = useState("");
 
   // Handle form submission
   const handleSubmit = (e) => {
@@ -14,21 +13,21 @@ const AddSkills = ({ setProfiles, navigate }) => {
     const newProfile = {
       id: Date.now(), // Unique ID using the current timestamp
       name,
-      skills: skills.split(',').map((skill) => skill.trim()), // Split skills by commas
+      skills: skills.split(",").map((skill) => skill.trim()), // Split skills by commas
       rating,
       profilePic,
     };
 
     // Save the new profile to localStorage
-    const storedProfiles = JSON.parse(localStorage.getItem('profiles')) || [];
+    const storedProfiles = JSON.parse(localStorage.getItem("profiles")) || [];
     storedProfiles.push(newProfile);
-    localStorage.setItem('profiles', JSON.stringify(storedProfiles));
+    localStorage.setItem("profiles", JSON.stringify(storedProfiles));
 
     // Update the profiles in the Dashboard
     setProfiles(storedProfiles); // Update the state to reflect the new profile
 
     // Redirect back to the dashboard
-    navigate('/dashboard');
+    navigate("/dashboard");
   };
 
   return (
