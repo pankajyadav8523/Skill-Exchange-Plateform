@@ -8,7 +8,7 @@ const CustomNavbar = () => {
     <Navbar bg="light" expand="lg" className="custom-navbar">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          Skill Share
+          Skill Bridge
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

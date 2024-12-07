@@ -4,7 +4,7 @@ function HomePage({ navigateTo, skills }) {
   return (
     <div>
       <h1>Home Page</h1>
-      <p>Welcome to the Skill Exchange Platform!</p>
+      <p>Welcome to Skill Bridge!</p>
       <div>
         {skills.map((skill) => (
           <div
