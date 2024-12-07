@@ -7,7 +7,7 @@ import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Login from "./components/login/Login";
-import Signup from "./components/SignUp"; // Ensure this matches the file name
+import Signup from "./components/SignUp/SignUp";
 import Dashboard from "./components/dashboard/Dashboard";
 import { AuthProvider } from "../AuthContext";
 
