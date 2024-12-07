@@ -1,0 +1,66 @@
+/* General Section Styling */
+.testimonials {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 50px 20px; /* Space around the section */
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem; /* Large heading */
+    color: #004aad; /* Brand blue color */
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Testimonials Container */
+  .testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    max-width: 1200px; /* Limit container width */
+    margin: auto;
+  }
+  
+  /* Individual Testimonial Card */
+  .testimonial-card {
+    background: white; /* White background for the card */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  /* Testimonial Image */
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circle shape */
+    border: 3px solid #004aad; /* Border matching the brand color */
+    margin-bottom: 20px;
+  }
+  
+  /* Testimonial Feedback */
+  .testimonial-feedback {
+    font-size: 1.2rem; /* Slightly larger text */
+    font-style: italic; /* Italic for quotes */
+    color: #555; /* Subtle dark gray */
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Testimonial Name */
+  .testimonial-name {
+    font-size: 1.1rem;
+    color: #004aad; /* Brand blue color */
+    font-weight: bold;
+    text-align: center;
+  }
+  

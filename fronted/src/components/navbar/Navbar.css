@@ -1,0 +1,82 @@
+/* Navbar.css */
+
+/* Custom styles for the navbar */
+.custom-navbar {
+  background-color: #fbfbfb; /* Light gray background */
+  font-family: 'Arial', sans-serif;
+  padding: 0.5rem 1rem;
+  /* border-bottom: 2px solid #ddd; Subtle border below navbar */
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.custom-navbar .navbar-toggler {
+  display: none;
+}
+
+/* Adjust the container to separate brand and nav links */
+.custom-navbar .container {
+  display: flex;
+  justify-content: space-between; /* Separate brand and nav links */
+  align-items: center;
+}
+
+/* Brand/logo styling */
+.custom-navbar .navbar-brand {
+  font-size: 1.75rem; /* Slightly larger font size for brand */
+  font-weight: bold;
+  color: #007bff; /* Bootstrap blue */
+  text-decoration: none;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Navigation links styling */
+.custom-navbar .nav {
+  display: flex;
+  gap: 2rem; /* Adds space between navigation links */
+}
+.custom-navbar .nav-link {
+  margin-right: 2rem; /* Adds space between each navigation link */
+}
+
+/* Optional: Remove extra margin from the last link */
+.custom-navbar .nav-link:last-child {
+  margin-right: 0;
+}
+
+
+.custom-navbar .nav-link {
+  font-size: 1.25rem; /* Increased font size for navigation links */
+  color: #111010; /* Dark gray text */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #007bff; /* Bootstrap blue on hover */
+  text-decoration: underline;
+}
+
+/* Active link styling */
+.custom-navbar .nav-link.active {
+  color: #0056b3; /* Darker blue for active link */
+  font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .custom-navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .custom-navbar .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem; /* Reduced gap for smaller screens */
+  }
+}
