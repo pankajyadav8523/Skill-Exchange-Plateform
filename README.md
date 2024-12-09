@@ -1,7 +1,3 @@
-Here’s a comprehensive README file for your Skills Exchange Platform project:
-
----
-
 # Skills Exchange Platform
 
 **Skills Exchange Platform** is a platform where users can share their skills and learn from others. This project aims to create a collaborative environment for individuals to enhance their knowledge and expertise through skill-sharing.
