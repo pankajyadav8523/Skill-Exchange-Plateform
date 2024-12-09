@@ -10,6 +10,7 @@ import Login from "./components/login/Login";
 import Signup from "./components/SignUp/SignUp";
 import Dashboard from "./components/dashboard/Dashboard";
 import { AuthProvider } from "../AuthContext";
+import ProfilePage from "./components/profile/ProfileComponent";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/dashboard/profile" element={<ProfilePage />} />
           </Routes>
         </div>
       </Router>

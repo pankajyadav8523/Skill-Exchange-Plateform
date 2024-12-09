@@ -18,6 +18,7 @@ const CustomNavbar = () => {
     }
   };
 
+  console.log("mic check", user);
   // Show loading state while checking authentication
   if (loading) {
     return (
@@ -43,6 +44,9 @@ const CustomNavbar = () => {
               <>
                 <Nav.Link>Welcome, {user.displayName || user.email}</Nav.Link>
                 <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
+                <Nav.Link as={Link} to="/dashboard/profile">
+                  Profile
+                </Nav.Link>
               </>
             ) : (
               <>

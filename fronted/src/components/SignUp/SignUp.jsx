@@ -8,14 +8,15 @@ const Signup = () => {
   const { signup } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState(""); // Change default to an empty string or any desired default value
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await signup(email, password);
-      navigate("/login");
+      await signup(email, password, name);
+      navigate("/dashboard");
     } catch (err) {
       setError("Failed to create an account. Please try again.");
     }
@@ -25,8 +26,17 @@ const Signup = () => {
     <div className="signup-page">
       <Container className="signup-container" style={{ height: "300px" }}>
         <h2 className="signup-title">Signup</h2>
-        {error && <p className="text-danger">{error}</p>}{" "}
+        {error && <p className="text-danger">{error}</p>}
         <Form onSubmit={handleSignup}>
+          <Form.Group controlId="formName" className="mb-3">
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)} // Update the name state
+            />
+          </Form.Group>
           <Form.Group controlId="formEmail" className="mb-3">
             <Form.Label>Email</Form.Label>
             <Form.Control

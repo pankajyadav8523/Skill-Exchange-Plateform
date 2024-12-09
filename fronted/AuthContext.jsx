@@ -3,7 +3,8 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
-  createUserWithEmailAndPassword, // Import signup function
+  createUserWithEmailAndPassword,
+  updateProfile, // Import signup function
 } from "firebase/auth";
 import auth from "./firebase";
 
@@ -40,13 +41,14 @@ export const AuthProvider = ({ children }) => {
   };
 
   // Signup function
-  const signup = async (email, password) => {
+  const signup = async (email, password, name) => {
     try {
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         email,
         password
       );
+      await updateProfile(userCredential.user, { displayName: name });
       setUser(userCredential.user);
     } catch (error) {
       console.error("Signup Error:", error.message);
